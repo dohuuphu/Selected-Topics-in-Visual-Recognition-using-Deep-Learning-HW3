@@ -1,0 +1,10 @@
+train:
+  amp: {enabled: false}
+  checkpointer: {max_to_keep: 100, period: 5000}
+  ddp: {broadcast_buffers: false, find_unused_parameters: false, fp16_compression: false}
+  device: cuda
+  eval_period: 5000
+  init_checkpoint: ''
+  log_period: 20
+  max_iter: 90000
+  output_dir: ./output

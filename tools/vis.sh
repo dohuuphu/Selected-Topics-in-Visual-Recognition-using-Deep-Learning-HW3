@@ -1,0 +1,1 @@
+python visualize_json_results.py --input /mnt/SSD7/yuwei-hdd3/selected/HW3/train.json --output /mnt/SSD7/yuwei-hdd3/selected/HW3/detectron2/tools/visualize 
