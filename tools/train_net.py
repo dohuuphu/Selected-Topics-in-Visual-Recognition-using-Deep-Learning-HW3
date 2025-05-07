@@ -54,13 +54,8 @@ from pycocotools import mask as mask_utils
 
 
 from detectron2.data.datasets import register_coco_instances
-register_coco_instances("my_dataset_train", {}, "/mnt/SSD7/yuwei-hdd3/selected/HW3/hw3-data-release/train.json", "/mnt/SSD7/yuwei-hdd3/selected/HW3/hw3-data-release/train")
-register_coco_instances(
-    "my_dataset_val", 
-    {}, 
-    "/mnt/SSD7/yuwei-hdd3/selected/HW3/hw3-data-release/val.json", 
-    "/mnt/SSD7/yuwei-hdd3/selected/HW3/hw3-data-release/train"  # nếu val ảnh nằm chung thư mục với train
-)
+register_coco_instances("my_dataset_train", {}, "../../hw3-data-release/train.json", "../../hw3-data-release/train")
+register_coco_instances("my_dataset_val", {}, "../../hw3-data-release/val.json", "../../hw3-data-release/train")
 def build_evaluator(cfg, dataset_name, output_folder=None):
     """
     Create evaluator(s) for a given dataset.
